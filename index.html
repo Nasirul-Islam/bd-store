@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FakeStore</title>
+  <title>BD-Store</title>
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -20,15 +20,23 @@
 <body>
   <header></header>
   <main class="main">
-    <div class="search-field">
-      <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
+    <!-- <div class="search-field"> -->
+    <div class="search-box row">
+      <div class="col-lg-9">
+        <!-- <input id="input-field" class="search-field " type="text" placeholder="Search your needs" /> -->
+        <input class="inputSearch" type="text" placeholder="Search your needs">
+      </div>
+      <div class="col-lg-3">
+        <!-- <button type="button" class="btn btn-primary search-button " data-toggle="button" aria-pressed="false"
           autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
+          Search</button> -->
+        <button type="button" class="searchBtn">Search</button>
       </div>
     </div>
+    <!-- </div> -->
+
+
+    <!-- product list -->
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
